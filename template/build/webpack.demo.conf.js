@@ -27,11 +27,10 @@ var webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   externals : {
-    "vue": "Vue",
-    {{#axios}}
-    "axios" : "axios",{{#axios}}{{#router}},
+    "vue": "Vue"{{#axios}},
+    "axios" : "axios"{{#axios}}{{#router}},
     "vue-router" : "VueRouter"
-    {{/lint}}
+    {{/router}}
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
