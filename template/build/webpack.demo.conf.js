@@ -28,7 +28,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   },
   externals : {
     "vue": "Vue"{{#axios}},
-    "axios" : "axios"{{#axios}}{{#router}},
+    "axios" : "axios"{{/axios}}{{#router}},
     "vue-router" : "VueRouter"
     {{/router}}
   },
