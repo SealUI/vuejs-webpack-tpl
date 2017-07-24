@@ -24,8 +24,10 @@
   <body {{#isMobile}}ontouchstart{{/isMobile}}>
 	<div id="app"></div>
 	<% if (process.env.NODE_ENV !== 'development') { %>
+	{{#isMobile}}
 	<script src="https://unpkg.com/zepto@1.2.0/dist/zepto.min.js"></script>
 	<script src="https://unpkg.com/fastclick@1.0.6/lib/fastclick.js"></script>
+	{{/isMobile}}
 	<script src="https://unpkg.com/vue@2.3.4/dist/vue.min.js"></script>
 	{{#router}}
 	<script src="https://unpkg.com/vue-router@2.7.0/dist/vue-router.min.js"></script>
