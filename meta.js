@@ -24,6 +24,10 @@ module.exports = {
       "type": "string",
       "message": "开发者"
     },
+    "isMobile":{
+      "type": "confirm",
+      "message": "是否是移动应用?"
+    },
     "build": {
       "type": "list",
       "message": "Vue build",

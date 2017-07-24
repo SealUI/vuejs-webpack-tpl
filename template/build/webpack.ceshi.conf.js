@@ -23,8 +23,8 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.ceshi.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.ceshi.assetsRoot,
-    filename: utils.assetsPath('js/[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[chunkhash].js')
+    filename: utils.assetsPath('js/[chunkhash:20].js'),
+    chunkFilename: utils.assetsPath('js/[chunkhash:20].js')
   },
   externals : {
     "vue": "Vue"{{#axios}},
@@ -49,7 +49,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: utils.assetsPath('css/[contenthash].css')
+      filename: utils.assetsPath('css/[contenthash:20].css')
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.

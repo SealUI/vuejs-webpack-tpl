@@ -15,7 +15,7 @@ module.exports = {
     bundleAnalyzerReport: process.env.npm_config_report
   },
   ceshi: {
-    env: require('./prod.env'),
+    env: require('./ceshi.env'),
     index: path.resolve(__dirname, '../ceshi/index.html'),
     assetsRoot: path.resolve(__dirname, '../ceshi'),
     assetsSubDirectory: 'static',
@@ -26,7 +26,7 @@ module.exports = {
     bundleAnalyzerReport: process.env.npm_config_report
   },
   demo: {
-    env: require('./prod.env'),
+    env: require('./demo.env'),
     index: path.resolve(__dirname, '../demo/index.html'),
     assetsRoot: path.resolve(__dirname, '../demo'),
     assetsSubDirectory: 'static',
