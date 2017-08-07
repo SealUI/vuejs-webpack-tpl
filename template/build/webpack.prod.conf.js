@@ -24,7 +24,8 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[chunkhash:20].js'),
-    chunkFilename: utils.assetsPath('js/[chunkhash:20].js')
+    chunkFilename: utils.assetsPath('js/[chunkhash:20].js'),
+    libraryTarget: 'umd'
   },
   externals : {
     "vue": "Vue"{{#axios}},
