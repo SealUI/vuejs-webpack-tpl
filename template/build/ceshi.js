@@ -32,7 +32,7 @@ rm(path.join(config.ceshi.assetsRoot, config.ceshi.assetsSubDirectory), err => {
       chunkModules: false
     }) + '\n\n')
 
-    cconsole.log('---------------------------------')
+    console.log('---------------------------------')
     spinner.succeed(success('  [ 测试环境 ] 构建完成.'));
     console.log('---------------------------------\n')
 
